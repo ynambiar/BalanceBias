@@ -1,0 +1,122 @@
+<!-- this program extracts the score for id
+# averages id -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        </script>
+
+        <!-- code here -->
+        <script>
+            window.onload = function() {
+                // load JSON file
+                var jsonData2 = {"geoResult": [
+                {
+                  "ID":7540828,
+                  "Date":"1/1/15",
+                  "Location":"979 SIMS AVE NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.45348,
+                  "ycoordinate":33.78144
+                },
+                {
+                  "ID":7541056,
+                  "Date":"1/3/15",
+                  "Location":"2020 BOLTON RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.47594,
+                  "ycoordinate":33.81125
+                }]
+                }
+
+                var sentimentJSON = {
+                "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
+                "SentimentBatch": [
+                    {
+                        "Score": 0.9549767,
+                        "Id": "1"
+                    },
+                    {
+                        "Score": 0.7767222,
+                        "Id": "2"
+                    },
+                    {
+                        "Score": 0.8988889,
+                        "Id": "3"
+                    }
+                ],
+                "Errors": []
+            }
+
+            // function readTextFile(file) {
+            //     var rawFile = new XMLHttpRequest();
+            //     rawFile.open("GET", file, false);
+            //     rawFile.onreadystatechange = function () {
+            //         if(rawFile.readyState === 4) {
+            //             if(rawFile.status === 200 || rawFile.status == 0) {
+            //                 var allText = rawFile.responseText;
+            //                 alert(allText);
+            //             }
+            //         }
+            //     }
+            //     rawFile.send(null);
+            // }
+
+            var xmlhttp = new XMLHttpRequest();
+            var url = "articles.csv";
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var myArr = JSON.parse(xmlhttp.responseText);
+                    myFunction(myArr);
+                    console.log("xmlhttp Request Asepted");
+                }
+            }
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+                function myFunction(arr) {
+                    var out = "";
+                    var i;
+                    var row = 0;
+                for(i = 0; i < arr.length; i++) {
+                   // console.log( arr[1].data); change data to what every you have in  your file
+                   // out +=  arr[i].data + '<br>' + arr[i].data2 ;
+                    document.getElementById("id01").innerHTML = out;
+                }
+            }
+
+            function getAverage(sentimentJSON) {
+                var count = 0;
+                var sum = 0;
+                readTextFile(articles.csv);
+                // length Object.keys(SentimentBatch).length
+                for (var i = 0; i < 3; i++) {
+                    count += sentimentJSON.SentimentBatch[i].Score;
+                    sum++;
+                }
+                var average = count/sum;
+                return 2;
+            }
+        }
+
+        </script>
+
+        <script>
+        document.write(9+10);
+        document.write(getAverage(sentimentJSON));
+        document.write(1+4);
+        </script>
+
+
+    </head>
+    <body>
+    <h1>JavaScript in Head</h1>
+    <p id="demo">A Paragraph. and the average is = </p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    </body>
+</html>

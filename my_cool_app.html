@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<!-- HTML for SEARCH BAR -->
+	<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
+
+    <!DOCTYPE html>
+<html>
+<body>
+
+	<div id="container">
+		<div id="control"></div>
+	</div>
+
+	<!-- The range input is hidden and updated on each rotation of the knob -->
+	<input type="range" id="slider" min="0" max="500" value="250" />
+	<button onclick="myFunction()">Submit</button>
+	<script>
+		function myFunction() {
+    	var x = document.getElementById("myRange").value;
+
+	}
+	</script>
+
+</form>
+</body>
+</html>
+
+
+<style>
+
+body {
+   margin: 30;
+   padding: 30;
+   color: white;
+   size: 40;
+}
+.tile {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
+}
+.content {
+   position: absolute;
+   left: 0.8em;
+   right: 0.5em;
+   top: 0.5em;
+   bottom: 0.5em;
+   background-color: #007;
+   font-size:20px;
+   text-align: center;
+}
+
+@media (max-width: 50em){
+  .tile{
+     width: 50%;
+     padding-bottom: 50%;
+  }
+}
+
+</style>
+
+<div class=tile id="1">
+  <div class = content>
+  www.google.com/
+  </div>
+</div>
+
+<div class=tile id="2">
+  <div class = content>
+  www.yahoo.com/
+  </div>
+</div>
+
+<div class=tile id="3">
+  <div class = content>
+  http://www.wsj.com/
+  </div>
+</div>
+
+<div class=tile id="4">
+  <div class = content>
+      http://www.cnn.com/  </div>
+</div>
+
+<div class=tile id="5">
+  <div class = content>
+      http://www.nytimes.com/
+  </div>
+</div>
+
+<div class=tile id="6">
+  <div class = content>
+      <p><a href="http://www.foxnews.com/">Fox News</a></p>
+
+  </div>
+</div>
+
+<div class=tile id="7">
+  <div class = content>
+      http://www.bbc.com/news
+  </div>
+</div>
+
+<div class=tile id="8">
+  <div class = content>
+      https://news.google.com/
+  </div>
+</div>
+
+<div class=tile id="9">
+  <div class = content>
+      www.bing.com/
+  </div>
+</div>
+
+<div class=tile id="10">
+  <div class = content>
+      www.pbs.org/
+  </div>
+</div>
+</body>
+</html>

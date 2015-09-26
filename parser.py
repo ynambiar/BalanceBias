@@ -1,13 +1,13 @@
 from bs4 import BeautifulSoup
 import re
 
-#global variables
-files = ["wsjTest", "nytTest", "msnTest", "cnnTest"]
+##methods
 
-#methods
+#return title of article
 def getTitle(soup):
     return soup.html.head.title.string
 
+#return html filename
 def getHTML(filename):
     return filename + ".html"
 
@@ -33,52 +33,34 @@ def tokenizer_SENT(txt):
 
 #returns array of sentence strings
 def makeSentenceArray(filename):
-    parsed = open(filename)
+    parsed = open(filename + "_parsed.txt")
     sentences = tokenizer_SENT(parsed.read())
     return sentences
 
+#converts array of string to json format
+def writeToCSVjson(filename):
+    count = 0
+    sentences = makeSentenceArray(filename)
 
-#main()
+    file = open(filename + "_parsed.json", "w")
+    file.write("{\"Inputs\":\n[\n")
+    for each in sentences:
+        output_format = '    {{"Id": "{id}", "Text": "{text}"}},\n'
+        file.write(output_format.format( id = count,
+                                        text = each))
+        count = count + 1
 
-print makeSentenceArray("wsjTest_parsed.txt")
-print "heyy"
+    file.write("]}")
+    file.close()
 
-import csv
-b = open('test.csv', 'w')
-a = csv.writer(b)
-data = [['Me', 'You'],\
-        ['293', '219'],\
-        ['54', '13']]
-a.writerows(data)
-b.close()
+#generates .json files from source files (.html)
+def generateJSONFromSource(source):
+    for each in source:
+        writeToCSVjson(each)
 
-import csv
-RESULT = ['apple','cherry','orange','pineapple','strawberry']
-resultFile = open("output.csv",'wb')
-wr = csv.writer(resultFile, dialect='excel')
-wr.writerow(RESULT)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#main
+source_files = ["wsjTest", "nytTest", "msnTest", "cnnTest"]
+generateJSONFromSource(source_files)
 
 
 

@@ -1,14 +1,14 @@
 {"Inputs":
 [
-    {"id":"1","fscore":"0.47279974294","visibility":true, "url":"http://www.chicagobusiness.com/article/20150921/BLOGS02/150929994/progressive-caucus-pushes-new-property-tax-relief-plan-as-cps-tax-hike-begins-to-move"},
-    {"id":"2","fscore":"0.47657541","visibility":true, "url":"http://chicago.suntimes.com/chicago-politics/7/71/977415/progressive-caucus-outlines-property-tax-rebate-plan"},
-    {"id":"3","fscore":"0.57007525733","visibility":true, "url":"http://www.commdiginews.com/politics-2/hillarys-progressive-tax-plans-paid-for-by-the-middle-class-48773/"},
-    {"id":"4","fscore":"0.57007525733","visibility":true, "url":"http://blogs.wsj.com/economics/2015/09/24/the-wealthiest-households-claim-90-of-tax-credits-for-buying-electric-cars/"},
-    {"id":"5","fscore":"0.54695247171","visibility":true, "url":"http://www.financialbuzz.com/hawaii-languishes-at-bottom-of-us-tax-system-335157"},
-    {"id":"6","fscore":"-1","visibility":true, "url":"http://www.wsj.com/articles/tax-evasions-bite-from-the-ancient-world-to-modern-days-1443028212"},
-    {"id":"7","fscore":"0.38497591807","visibility":true, "url":"http://www.vox.com/2015/9/16/9342703/ben-carson-donald-trump-debate"},
-    {"id":"8","fscore":"0.42452675833","visibility":true, "url":"http://www.nystateofpolitics.com/2015/09/wfps-lipton-dont-lash-tax-cut-to-minimum-wage/"},
-    {"id":"9","fscore":"0.49072530175","visibility":true, "url":"http://www.baconsrebellion.com/2015/09/is-virginias-tax-code-really-the-35th-most-unfair.html"},
-    {"id":"10","fscore":"0.48775885","visibility":true, "url":"http://www.oregonlive.com/mapes/index.ssf/2015/09/oregons_tax_system_among_faire.html"},
+    {"id":"1","fscore":"0.47279974294","visibility":"visible", "url":"http://www.chicagobusiness.com/article/20150921/BLOGS02/150929994/progressive-caucus-pushes-new-property-tax-relief-plan-as-cps-tax-hike-begins-to-move","title":"Progressive Caucus pushes new property-tax-relief plan as CPS tax hike begins to move", "news_source":"Chicago Business"},
+    {"id":"2","fscore":"0.47657541","visibility":"visible", "url":"http://chicago.suntimes.com/chicago-politics/7/71/977415/progressive-caucus-outlines-property-tax-rebate-plan","title":"Progressive Caucus outlines property tax rebate plan", "news_source":"Chicago Sun Times"},
+    {"id":"3","fscore":"0.57007525733","visibility":"visible", "url":"http://www.commdiginews.com/politics-2/hillarys-progressive-tax-plans-paid-for-by-the-middle-class-48773/","title":"Hillary’s progressive tax plans – paid for by the middle class", "news_source":"Communities Digital News"},
+    {"id":"4","fscore":"0.57007525733","visibility":"visible", "url":"http://blogs.wsj.com/economics/2015/09/24/the-wealthiest-households-claim-90-of-tax-credits-for-buying-electric-cars/","title":"The Wealthiest Households Claim 90% of Tax Credits for Buying Electric Cars", "news_source":"Wall Street Journal"},
+    {"id":"5","fscore":"0.54695247171","visibility":"visible", "url":"http://www.financialbuzz.com/hawaii-languishes-at-bottom-of-us-tax-system-335157","title":"Hawaii Languishes at Bottom of US Tax System", "news_source":"Financial Buzz"},
+    {"id":"6","fscore":"-1","visibility":"visible", "url":"http://www.wsj.com/articles/tax-evasions-bite-from-the-ancient-world-to-modern-days-1443028212","title":"Tax Evasion’s Bite, From the Ancient World to Modern Days", "news_source":"Wall Street Journal"},
+    {"id":"7","fscore":"0.38497591807","visibility":"visible", "url":"http://www.vox.com/2015/9/16/9342703/ben-carson-donald-trump-debate","title":"Ben Carson: Progressive taxation is socialism. Donald Trump: No it isn't.", "news_source":"Vox"},
+    {"id":"8","fscore":"0.42452675833","visibility":"visible", "url":"http://www.nystateofpolitics.com/2015/09/wfps-lipton-dont-lash-tax-cut-to-minimum-wage/","title":"WFP’s Lipton: Don’t Lash Tax Cut To Minimum Wage", "news_source":"NY State of Politics"},
+    {"id":"9","fscore":"0.49072530175","visibility":"visible", "url":"http://www.baconsrebellion.com/2015/09/is-virginias-tax-code-really-the-35th-most-unfair.html","title":"Virginia’s Tax Code the 35th Most “Unfair”", "news_source":"Bacon's Rebellion"},
+    {"id":"10","fscore":"0.48775885","visibility":"visible", "url":"http://www.oregonlive.com/mapes/index.ssf/2015/09/oregons_tax_system_among_faire.html","title":"Oregon's tax system among fairest in country, survey claims", "news_source":"The Oregonian"},
 
 ]}

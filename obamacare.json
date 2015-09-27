@@ -1,14 +1,14 @@
 {"Inputs":
 [
-    {"id":"1","fscore":"-1","visibility":"visible", "url":"http://www.fool.com/investing/general/2015/09/26/why-more-than-two-thirds-of-obamacare-enrollees-op.aspx", "title":"Why More Than Two-Thirds of Obamacare Enrollees Opt for a Silver Plan", "sourc":"The Motley Fool"},
-    {"id":"2","fscore":"0.59934413125","visibility":"visible", "url":"http://dailycaller.com/2015/09/25/is-obamacare-officially-a-money-laundering-scheme/", "title":"Is Obamacare Officially A Money Laundering Scheme?", "sourc":""},
-    {"id":"3","fscore":"0.55756989473","visibility":"visible", "url":"http://news.heartland.org/editorial/2015/09/26/obamacare-waste-continues-pile", "title":"", "sourc":""},
-    {"id":"4","fscore":"0.49969899113","visibility":"visible", "url":"http://news.investors.com/politics/092515-772752-why-house-gop-obamacare-lawsuit-is-huge-deal.htm", "title":"", "sourc":""},
-    {"id":"5","fscore":"0.45761819285","visibility":"visible", "url":"http://www.cnn.com/2015/09/24/politics/pope-meets-little-sisters-of-the-poor-obamacare/index.html", "title":"", "sourc":""},
-    {"id":"6","fscore":"-1","visibility":"visible", "url":"http://townhall.com/columnists/larrykudlow/2015/09/26/the-shutdown-message-n2057184", "title":"", "sourc":""},
-    {"id":"7","fscore":"0.44063547758","visibility":"visible", "url":"http://nymag.com/daily/intelligencer/2015/09/obamacare-haters-freaking-out-over-new-report.html", "title":"", "sourc":""},
-    {"id":"8","fscore":"-1","visibility":"visible", "url":"http://thehill.com/policy/healthcare/255003-non-profit-obamacare-plan-in-ny-shut-down", "title":"", "sourc":""},
-    {"id":"9","fscore":"0.3945609","visibility":"visible", "url":"http://www.inquisitr.com/2444417/pope-francis-vs-obamacare-religious-leader-supports-lawsuit-during-unscheduled-visit-to-convent/", "title":"", "sourc":""},
-    {"id":"10","fscore":"0.39489064722","visibility":"visible", "url":"http://www.peoplespunditdaily.com/policy/2015/09/25/obamacare-is-still-a-disaster/", "title":"", "sourc":""},
+    {"id":"1","fscore":"-1","visibility":"visible", "url":"http://www.fool.com/investing/general/2015/09/26/why-more-than-two-thirds-of-obamacare-enrollees-op.aspx", "title":"Why More Than Two-Thirds of Obamacare Enrollees Opt for a Silver Plan", "news_source":"The Motley Fool"},
+    {"id":"2","fscore":"0.59934413125","visibility":"visible", "url":"http://dailycaller.com/2015/09/25/is-obamacare-officially-a-money-laundering-scheme/", "title":"Is Obamacare Officially A Money Laundering Scheme?", "news_source":"Daily Caller"},
+    {"id":"3","fscore":"0.55756989473","visibility":"visible", "url":"http://news.heartland.org/editorial/2015/09/26/obamacare-waste-continues-pile", "title":"Obamacare Waste Continues to Pile Up", "news_source":"Heartlander Magazine"},
+    {"id":"4","fscore":"0.49969899113","visibility":"visible", "url":"http://news.investors.com/politics/092515-772752-why-house-gop-obamacare-lawsuit-is-huge-deal.htm", "title":"House Suit May End N.Y. ObamaCare Plan, State Waivers", "news_source":"Investor's Business Daily"},
+    {"id":"5","fscore":"0.45761819285","visibility":"visible", "url":"http://www.cnn.com/2015/09/24/politics/pope-meets-little-sisters-of-the-poor-obamacare/index.html", "title":"Pope meets with nuns fighting Obamacare", "news_source":"CNN"},
+    {"id":"6","fscore":"-1","visibility":"visible", "url":"http://townhall.com/columnists/larrykudlow/2015/09/26/the-shutdown-message-n2057184", "title":"Every Now and Then, the GOP Should Disrupt the Status Quo", "news_source":"Townhall"},
+    {"id":"7","fscore":"0.44063547758","visibility":"visible", "url":"http://nymag.com/daily/intelligencer/2015/09/obamacare-haters-freaking-out-over-new-report.html", "title":"Obamacare Haters Freaking Out Over New Report", "news_source":"New York Magazine"},
+    {"id":"8","fscore":"-1","visibility":"visible", "url":"http://thehill.com/policy/healthcare/255003-non-profit-obamacare-plan-in-ny-shut-down", "title":"Another ObamaCare nonprofit bites the dust", "news_source":"The Hill"},
+    {"id":"9","fscore":"0.3945609","visibility":"visible", "url":"http://www.inquisitr.com/2444417/pope-francis-vs-obamacare-religious-leader-supports-lawsuit-during-unscheduled-visit-to-convent/", "title":"Pope Francis vs Obamacare: Religious Leader Supports Lawsuit During Unscheduled Visit to Convent", "news_source":"Inquisitr"},
+    {"id":"10","fscore":"0.39489064722","visibility":"visible", "url":"http://www.peoplespunditdaily.com/policy/2015/09/25/obamacare-is-still-a-disaster/", "title":"Obamacare is Still a Disaster", "news_source":"People's Pundit Daily"},
 
 ]}

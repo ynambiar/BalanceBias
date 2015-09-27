@@ -1,14 +1,14 @@
 {"Inputs":
 [
     {"id":"1","fscore":"-1","visibility":true, "url":"http://www.fool.com/investing/general/2015/09/26/why-more-than-two-thirds-of-obamacare-enrollees-op.aspx"},
-    {"id":"2","fscore":"-1","visibility":true, "url":"http://dailycaller.com/2015/09/25/is-obamacare-officially-a-money-laundering-scheme/"},
-    {"id":"3","fscore":"-1","visibility":true, "url":"http://news.heartland.org/editorial/2015/09/26/obamacare-waste-continues-pile"},
-    {"id":"4","fscore":"-1","visibility":true, "url":"http://news.investors.com/politics/092515-772752-why-house-gop-obamacare-lawsuit-is-huge-deal.htm"},
-    {"id":"5","fscore":"-1","visibility":true, "url":"http://www.cnn.com/2015/09/24/politics/pope-meets-little-sisters-of-the-poor-obamacare/index.html"},
+    {"id":"2","fscore":"0.59934413125","visibility":true, "url":"http://dailycaller.com/2015/09/25/is-obamacare-officially-a-money-laundering-scheme/"},
+    {"id":"3","fscore":"0.55756989473","visibility":true, "url":"http://news.heartland.org/editorial/2015/09/26/obamacare-waste-continues-pile"},
+    {"id":"4","fscore":"0.49969899113","visibility":true, "url":"http://news.investors.com/politics/092515-772752-why-house-gop-obamacare-lawsuit-is-huge-deal.htm"},
+    {"id":"5","fscore":"0.45761819285","visibility":true, "url":"http://www.cnn.com/2015/09/24/politics/pope-meets-little-sisters-of-the-poor-obamacare/index.html"},
     {"id":"6","fscore":"-1","visibility":true, "url":"http://townhall.com/columnists/larrykudlow/2015/09/26/the-shutdown-message-n2057184"},
-    {"id":"7","fscore":"-1","visibility":true, "url":"http://nymag.com/daily/intelligencer/2015/09/obamacare-haters-freaking-out-over-new-report.html"},
+    {"id":"7","fscore":"0.44063547758","visibility":true, "url":"http://nymag.com/daily/intelligencer/2015/09/obamacare-haters-freaking-out-over-new-report.html"},
     {"id":"8","fscore":"-1","visibility":true, "url":"http://thehill.com/policy/healthcare/255003-non-profit-obamacare-plan-in-ny-shut-down"},
-    {"id":"9","fscore":"-1","visibility":true, "url":"http://www.inquisitr.com/2444417/pope-francis-vs-obamacare-religious-leader-supports-lawsuit-during-unscheduled-visit-to-convent/"},
-    {"id":"10","fscore":"-1","visibility":true, "url":"http://www.peoplespunditdaily.com/policy/2015/09/25/obamacare-is-still-a-disaster/"},
+    {"id":"9","fscore":"0.3945609","visibility":true, "url":"http://www.inquisitr.com/2444417/pope-francis-vs-obamacare-religious-leader-supports-lawsuit-during-unscheduled-visit-to-convent/"},
+    {"id":"10","fscore":"0.39489064722","visibility":true, "url":"http://www.peoplespunditdaily.com/policy/2015/09/25/obamacare-is-still-a-disaster/"},
 
 ]}

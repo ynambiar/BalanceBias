@@ -1,8 +1,8 @@
+
 from bs4 import BeautifulSoup
 import re
 
 ##methods
-
 #return title of article
 def getTitle(soup):
     return soup.html.head.title.string
@@ -21,7 +21,7 @@ def writeToFile(filename, paragraphs, soup):
     file.close()
 
 #reads html into file
-def generateTxt():
+def generateTxt(files):
     for each in files:
         soup = BeautifulSoup(open(getHTML(each)))
         paragraphs = soup("p")
@@ -56,11 +56,17 @@ def writeToCSVjson(filename):
 #generates .json files from source files (.html)
 def generateJSONFromSource(source):
     for each in source:
+        makeSentenceArray(each)
         writeToCSVjson(each)
 
-#main
+
+##main
 source_files = ["wsjTest", "nytTest", "msnTest", "cnnTest"]
-generateJSONFromSource(source_files)
+real_source_files = ["id1", "id2","id3","id4", "id5","id6","id7","id8","id9","id10"]
+
+generateTxt(real_source_files)
+generateJSONFromSource(real_source_files)
+
 
 
 

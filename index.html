@@ -29,7 +29,7 @@
 
   <div class="wrapper">
           <!-- The range input is hidden and updated on each rotation of the knob -->
-          <input type="range" id="slider" min="0" max="10" value="5" align="middle" width="250"/>
+          <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
 
           <br>
           <button class="button" onclick="myFunction()">Submit</button>
@@ -37,7 +37,7 @@
 
           <script>
             function myFunction() {
-              var x = document.getElementById("myRange").value();
+              var x = document.getElementById("myRange").value;
               console.log(x);
             }
           </script>

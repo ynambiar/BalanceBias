@@ -1,0 +1,142 @@
+{
+    "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
+    "SentimentBatch": [
+        {
+            "Score": 0.06970582,
+            "Id": "0"
+        },
+        {
+            "Score": 0.5087367,
+            "Id": "1"
+        },
+        {
+            "Score": 0.7941144,
+            "Id": "2"
+        },
+        {
+            "Score": 0.7172162,
+            "Id": "3"
+        },
+        {
+            "Score": 0.060465,
+            "Id": "4"
+        },
+        {
+            "Score": 0.749805,
+            "Id": "5"
+        },
+        {
+            "Score": 0.6539,
+            "Id": "6"
+        },
+        {
+            "Score": 0.9811397,
+            "Id": "7"
+        },
+        {
+            "Score": 0.5749803,
+            "Id": "8"
+        },
+        {
+            "Score": 0.8051521,
+            "Id": "9"
+        },
+        {
+            "Score": 0.925815,
+            "Id": "10"
+        },
+        {
+            "Score": 0.4721586,
+            "Id": "11"
+        },
+        {
+            "Score": 0.9199231,
+            "Id": "12"
+        },
+        {
+            "Score": 0.9733573,
+            "Id": "13"
+        },
+        {
+            "Score": 0.6673433,
+            "Id": "14"
+        },
+        {
+            "Score": 0.3710903,
+            "Id": "15"
+        },
+        {
+            "Score": 0.1991333,
+            "Id": "16"
+        },
+        {
+            "Score": 0.7497928,
+            "Id": "17"
+        },
+        {
+            "Score": 0.747034,
+            "Id": "18"
+        },
+        {
+            "Score": 0.6799513,
+            "Id": "19"
+        },
+        {
+            "Score": 0.4943459,
+            "Id": "20"
+        },
+        {
+            "Score": 0.5730625,
+            "Id": "21"
+        },
+        {
+            "Score": 0.7320512,
+            "Id": "22"
+        },
+        {
+            "Score": 0.84909,
+            "Id": "23"
+        },
+        {
+            "Score": 0.8917028,
+            "Id": "24"
+        },
+        {
+            "Score": 0.2801092,
+            "Id": "25"
+        },
+        {
+            "Score": 0.2945866,
+            "Id": "26"
+        },
+        {
+            "Score": 0.8938448,
+            "Id": "27"
+        },
+        {
+            "Score": 0.5707632,
+            "Id": "28"
+        },
+        {
+            "Score": 0.7102155,
+            "Id": "29"
+        },
+        {
+            "Score": 0.247073,
+            "Id": "30"
+        },
+        {
+            "Score": 0.22534,
+            "Id": "31"
+        },
+        {
+            "Score": 0.7431797,
+            "Id": "32"
+        },
+        {
+            "Score": 0.9289266,
+            "Id": "33"
+        }
+    ],
+    "Errors": []
+}

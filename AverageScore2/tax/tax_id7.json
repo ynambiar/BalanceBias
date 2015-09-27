@@ -1,0 +1,110 @@
+{
+    "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
+    "SentimentBatch": [
+        {
+            "Score": 1,
+            "Id": "0"
+        },
+        {
+            "Score": 0.2478373,
+            "Id": "1"
+        },
+        {
+            "Score": 0.5963486,
+            "Id": "2"
+        },
+        {
+            "Score": 0.402727,
+            "Id": "3"
+        },
+        {
+            "Score": 0.5184957,
+            "Id": "4"
+        },
+        {
+            "Score": 0.09792993,
+            "Id": "5"
+        },
+        {
+            "Score": 0.6366947,
+            "Id": "6"
+        },
+        {
+            "Score": 0.730108,
+            "Id": "7"
+        },
+        {
+            "Score": 0.195299,
+            "Id": "8"
+        },
+        {
+            "Score": 0.4608632,
+            "Id": "9"
+        },
+        {
+            "Score": 0.6029121,
+            "Id": "10"
+        },
+        {
+            "Score": 0.4056299,
+            "Id": "11"
+        },
+        {
+            "Score": 0.4728375,
+            "Id": "12"
+        },
+        {
+            "Score": 0.6355636,
+            "Id": "13"
+        },
+        {
+            "Score": 0.2317113,
+            "Id": "14"
+        },
+        {
+            "Score": 0.7993543,
+            "Id": "15"
+        },
+        {
+            "Score": 0.9810503,
+            "Id": "16"
+        },
+        {
+            "Score": 0.3123692,
+            "Id": "17"
+        },
+        {
+            "Score": 0.9479308,
+            "Id": "18"
+        },
+        {
+            "Score": 0.7933856,
+            "Id": "19"
+        },
+        {
+            "Score": 0.9696091,
+            "Id": "20"
+        },
+        {
+            "Score": 0.9260204,
+            "Id": "21"
+        },
+        {
+            "Score": 0.8945684,
+            "Id": "22"
+        },
+        {
+            "Score": 0.8676875,
+            "Id": "23"
+        },
+        {
+            "Score": 0.9993544,
+            "Id": "24"
+        },
+        {
+            "Score": 0.2643383,
+            "Id": "25"
+        }
+    ],
+    "Errors": []
+}

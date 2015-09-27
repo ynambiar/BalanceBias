@@ -1,0 +1,82 @@
+{
+    "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
+    "SentimentBatch": [
+        {
+            "Score": 0.1770131,
+            "Id": "0"
+        },
+        {
+            "Score": 0.5098512,
+            "Id": "1"
+        },
+        {
+            "Score": 0.1118351,
+            "Id": "2"
+        },
+        {
+            "Score": 0.396164,
+            "Id": "3"
+        },
+        {
+            "Score": 0.4897237,
+            "Id": "4"
+        },
+        {
+            "Score": 0.1181194,
+            "Id": "5"
+        },
+        {
+            "Score": 0.6568122,
+            "Id": "6"
+        },
+        {
+            "Score": 0.2967729,
+            "Id": "7"
+        },
+        {
+            "Score": 0.2091824,
+            "Id": "8"
+        },
+        {
+            "Score": 0.2227721,
+            "Id": "9"
+        },
+        {
+            "Score": 0.8796601,
+            "Id": "10"
+        },
+        {
+            "Score": 0.7862602,
+            "Id": "11"
+        },
+        {
+            "Score": 0.4799007,
+            "Id": "12"
+        },
+        {
+            "Score": 0.0376201,
+            "Id": "13"
+        },
+        {
+            "Score": 0.2362718,
+            "Id": "14"
+        },
+        {
+            "Score": 0.6928498,
+            "Id": "15"
+        },
+        {
+            "Score": 0.3876496,
+            "Id": "16"
+        },
+        {
+            "Score": 0.9603949,
+            "Id": "17"
+        },
+        {
+            "Score": 0.7573187,
+            "Id": "18"
+        }
+    ],
+    "Errors": []
+}

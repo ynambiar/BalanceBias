@@ -1,0 +1,30 @@
+{
+    "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
+    "SentimentBatch": [
+        {
+            "Score": 0.705093,
+            "Id": "0"
+        },
+        {
+            "Score": 0.1768248,
+            "Id": "1"
+        },
+        {
+            "Score": 0.4934486,
+            "Id": "2"
+        },
+        {
+            "Score": 0.5128889,
+            "Id": "3"
+        },
+        {
+            "Score": 0.5391936,
+            "Id": "4"
+        },
+        {
+            "Score": 0.645998,
+            "Id": "5"
+        }
+    ],
+    "Errors": []
+}

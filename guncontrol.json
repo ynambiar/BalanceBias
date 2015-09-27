@@ -1,6 +1,5 @@
 {"Inputs":
 [
-<<<<<<< HEAD
     {"id":"1","fscore":"0.39606466706","visibility":"visible", "url":"http://www.nydailynews.com/news/politics/cuomo-urges-dems-shut-government-gun-control-law-article-1.2375628", "title":"Cuomo urges Dems in Congress to shut down government to get gun control law", "news_source":"NY Daily News"},
     {"id":"2","fscore":"0.3960256048","visibility":"visible", "url":"http://www.newsmax.com/Newsfront/cuomo-national-gun-control/2015/09/26/id/693471/", "title":"Cuomo Calls for National Gun Control in Eulogy for Aide", "news_source":"Newsmax"},
     {"id":"3","fscore":"-1","visibility":"visible", "url":"http://www.newsday.com/news/new-york/cuomo-eulogizing-slain-aide-carey-gabay-calls-for-stronger-gun-control-laws-1.10892993", "title":"Cuomo eulogizes slain aide Carey Gabay, calls for stronger gun control laws", "news_source":"Newsday"},
@@ -10,18 +9,6 @@
     {"id":"7","fscore":"0.46793525945","visibility":"visible", "url":"http://www.cnn.com/2015/09/21/health/gun-laws-youth-carrying/index.html", "title":"Study: Stricter state gun laws keep firearms out of hands of youth", "news_source":"CNN"},
     {"id":"8","fscore":"0.41629485543","visibility":"visible", "url":"http://www.ocregister.com/articles/gun-684698-women-dix.html", "title":"Letters: Gun control advocates distort facts", "news_source":"The Orange County Register"},
     {"id":"9","fscore":"0.47008433333","visibility":"visible", "url":"http://nypost.com/2015/09/26/cuomo-mourns-carey-gabay-at-funeral-demands-gun-control/", "title":"Cuomo mourns Carey Gabay at funeral, demands gun control", "news_source":"New York Post"},
-    {"id":"10","fscore":"0.70827955333","visibility":"visible", "url":"http://www.thedailybeast.com/cheats/2015/09/26/cuomo-calls-for-gun-control-in-eulogy.html", "title":"Cuomo Calls for Gun Control in Eulogy", "news_source":"The Daily Beast"},
-=======
-    {"id":"1","fscore":"0.39606466706","visibility":"visible", "url":"http://www.nydailynews.com/news/politics/cuomo-urges-dems-shut-government-gun-control-law-article-1.2375628"},
-    {"id":"2","fscore":"0.3960256048","visibility":"visible", "url":"http://www.newsmax.com/Newsfront/cuomo-national-gun-control/2015/09/26/id/693471/"},
-    {"id":"3","fscore":"-1","visibility":"visible", "url":"http://www.newsday.com/news/new-york/cuomo-eulogizing-slain-aide-carey-gabay-calls-for-stronger-gun-control-laws-1.10892993"},
-    {"id":"4","fscore":"0.39221960307","visibility":"visible", "url":"http://www.guns.com/2015/09/26/live-feed-2015-gun-rights-policy-conference/"},
-    {"id":"5","fscore":"0.40637746769","visibility":"visible", "url":"http://mtstandard.com/news/local/proposed-missoula-gun-sale-rule-sparks-legal-debate/article_f3aff593-3383-523d-a504-2f6c3c6b05df.html"},
-    {"id":"6","fscore":"0.41508247","visibility":"visible", "url":"http://www.examiner.com/article/despite-faults-boehner-recently-nailed-it-on-gun-control-and-cdc"},
-    {"id":"7","fscore":"0.46793525945","visibility":"visible", "url":"http://www.cnn.com/2015/09/21/health/gun-laws-youth-carrying/index.html"},
-    {"id":"8","fscore":"0.41629485543","visibility":"visible", "url":"http://www.ocregister.com/articles/gun-684698-women-dix.html"},
-    {"id":"9","fscore":"0.47008433333","visibility":"visible", "url":"http://nypost.com/2015/09/26/cuomo-mourns-carey-gabay-at-funeral-demands-gun-control/"},
-    {"id":"10","fscore":"0.70827955333","visibility":"visible", "url":"http://www.thedailybeast.com/cheats/2015/09/26/cuomo-calls-for-gun-control-in-eulogy.html"},
->>>>>>> 6739a9b0b942c3e4cb0761e6fb5d1b574e1588bd
+    {"id":"10","fscore":"0.70827955333","visibility":"visible", "url":"http://www.thedailybeast.com/cheats/2015/09/26/cuomo-calls-for-gun-control-in-eulogy.html", "title":"Cuomo Calls for Gun Control in Eulogy", "news_source":"The Daily Beast"}
 
 ]}

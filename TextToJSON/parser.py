@@ -62,7 +62,7 @@ def generateJSONFromSource(source):
 
 ##main
 source_files = ["wsjTest", "nytTest", "msnTest", "cnnTest"]
-real_source_files = ["id1", "id2","id3","id4", "id5","id6","id7","id8","id9","id10"]
+real_source_files = ["id1","id2","id3","id4", "id5","id6","id7","id8","id9", "id10"]
 
 generateTxt(real_source_files)
 generateJSONFromSource(real_source_files)

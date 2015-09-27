@@ -33,46 +33,6 @@
 
     <!-- saves user input -->
     <script>
-      function getUserInput() {
-        for (var i = 0; i < gayrights.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-        for (var i = 0; i < guncontrol.Inputs; i++) {
-          input.Inputs[i].visibility = true;
-        }
-        for (var i = 0; i < gayrights.Inputs; i++) {
-          input.Inputs[i].visibility = true;
-        }
-
-
-
-        var input = document.getElementById("userInput").value;
-        console.log("userInput = " + input);
-        return input;
-      }
-
-      var input = getUserInput();
-
-    </script>
-
-    <div class="tfclear"></div>
-
-    <!-- HTML for slider -->
-    <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
-    <br>
-    <button class="button" onclick="myFunction()">Submit</button>
-
-    <!-- gets slider value and compares -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myRange").value;
-        console.log("The slide has a value of " + x);
-        return x;
-      }
-
-      var sliderVal = myFunction();
-
       var gayrights = {"Inputs":
         [
           {"id":"1","fscore":"0.6039353329347825","visibility":true, "url":"http://www.heraldsun.com/news/n-c-pride-annual-lgbt-festival-draws-thousands-to-durham/article_440994f6-649a-11e5-8958-fb7d25205116.html"},
@@ -143,11 +103,73 @@
           {"id":"10","fscore":"0.48775885","visibility":true, "url":"http://www.oregonlive.com/mapes/index.ssf/2015/09/oregons_tax_system_among_faire.html"},
         ]};
 
+      function getUserInput() {
+        for (var i = 0; i < gayrights.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < guncontrol.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < iran.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < obamacare.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < tax.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
 
-      for (var i = 0; i < input.Inputs; i++) {
-        if (sliderVal != input.Inputs[i].fscore) {
-          input.Inputs[i].visibility = false;
-          document.getElementById(i).styles.visibility="hidden";
+        var input = document.getElementById("userInput").value;
+        console.log("userInput = " + input);
+        return input;
+      }
+
+      var input = getUserInput();
+
+    </script>
+
+    <div class="tfclear"></div>
+
+    <!-- HTML for slider -->
+    <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
+    <br>
+    <button class="button" onclick="myFunction()">Submit</button>
+
+    <!-- gets slider value and compares -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myRange").value;
+        console.log("The slide has a value of " + x);
+        return x;
+      }
+
+      var sliderVal = myFunction();
+
+      var currentTopic = null;
+      if (input == "gay rights") {
+        currentTopic = gayrights;
+      } else if (input == "gun control") {
+        currentTopic = guncontrol;
+      } else if (input == "iran") {
+        currentTopic = iran;
+      } else if (input == "obamacare") {
+        currentTopic = obamacare;
+      } else if (input == "tax") {
+        currentTopic = tax;
+      }
+
+      if (currentTopic != null) {
+        for (var i = 0; i < currentTopic.Inputs; i++) {
+          if (sliderVal != currentTopic.Inputs[i].fscore) {
+            currentTopic.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
         }
       }
 

@@ -17,94 +17,226 @@
   </div>
 
 
+
+  <div class="wrapper"id="tfheader">
+
     <!-- HTML for SEARCH BAR -->
-    <div class="wrapper"id="tfheader">
-        <form id="tfnewsearch" method="get" action="http://www.bing.com">
-                <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
-                <input type="submit" value="Search Bing" class="button">
-        </form>
+    <!-- <form id="tfnewsearch" method="get" action="http://www.bing.com/news" target="_blank">
+      <input type="text" class="tftextinput" name="q" size="21" maxlength="120" id="userInput">
+      <input type="submit" value="Search Bing" class="button">
+    </form>
+ -->
+    <form id="form" onsubmit="return false;">
+      <input type="text" id="userInput" />
+      <input type="submit" onclick="getUserInput()" />
+    </form>
+
+    <!-- saves user input -->
+    <script>
+      var gayrights = {"Inputs":
+        [
+          {"id":"1","fscore":"0.6039353329347825","visibility":true, "url":"http://www.heraldsun.com/news/n-c-pride-annual-lgbt-festival-draws-thousands-to-durham/article_440994f6-649a-11e5-8958-fb7d25205116.html"},
+          {"id":"2","fscore":"0.3310558909","visibility":true, "url":"http://www.usatoday.com/story/news/nation-now/2015/09/14/florida-marriage-licenses-gender-neutral/72264194/"},
+          {"id":"3","fscore":"0.37754251056","visibility":true, "url":"http://www.bupipedream.com/opinion/57958/dont-forget-the-queer-in-lgbtq/"},
+          {"id":"4","fscore":"0.37754251056","visibility":true, "url":"http://www.wtxl.com/news/marriage-ruling-spurs-change-in-car-boat-title-paperwork/article_542b4f02-6236-11e5-9d55-3fed35f5710b.html"},
+          {"id":"5","fscore":"0.3027086875","visibility":true, "url":"http://www.times-herald.com/Local/20150924FrontSameSexMarriage12inches"},
+          {"id":"6","fscore":"-1","visibility":true, "url":"http://www.thedailybeast.com/cheats/2015/09/18/cruz-dad-backs-kim-davis.html"},
+          {"id":"7","fscore":"0.437666925","visibility":true, "url":"http://www.allmediany.com/news/55394-the-fight-for-same-sex-marriage-in-australia-isn039t-over"},
+          {"id":"8","fscore":"0.35831654285","visibility":true, "url":"http://www.wtsp.com/story/news/local/florida/2015/09/14/fl-marriage-licenses--now--gender-neutral/72249450/"},
+          {"id":"9","fscore":"0.49159860727","visibility":true, "url":"http://www.cleveland.com/opinion/index.ssf/2015/09/gay_marriage_plaintiff_lawyers.html"},
+          {"id":"10","fscore":"0.37754251056","visibility":true, "url":"http://www.keloland.com/newsdetail.cfm/south-dakota-to-pay-242k-in-gay-marriage-fees/?id=185436"},
+        ]};
+
+      var guncontrol = {"Inputs":
+        [
+          {"id":"1","fscore":"0.39606466706","visibility":true, "url":"http://www.nydailynews.com/news/politics/cuomo-urges-dems-shut-government-gun-control-law-article-1.2375628"},
+          {"id":"2","fscore":"0.3960256048","visibility":true, "url":"http://www.newsmax.com/Newsfront/cuomo-national-gun-control/2015/09/26/id/693471/"},
+          {"id":"3","fscore":"-1","visibility":true, "url":"http://www.newsday.com/news/new-york/cuomo-eulogizing-slain-aide-carey-gabay-calls-for-stronger-gun-control-laws-1.10892993"},
+          {"id":"4","fscore":"0.39221960307","visibility":true, "url":"http://www.guns.com/2015/09/26/live-feed-2015-gun-rights-policy-conference/"},
+          {"id":"5","fscore":"0.40637746769","visibility":true, "url":"http://mtstandard.com/news/local/proposed-missoula-gun-sale-rule-sparks-legal-debate/article_f3aff593-3383-523d-a504-2f6c3c6b05df.html"},
+          {"id":"6","fscore":"0.41508247","visibility":true, "url":"http://www.examiner.com/article/despite-faults-boehner-recently-nailed-it-on-gun-control-and-cdc"},
+          {"id":"7","fscore":"0.46793525945","visibility":true, "url":"http://www.cnn.com/2015/09/21/health/gun-laws-youth-carrying/index.html"},
+          {"id":"8","fscore":"0.41629485543","visibility":true, "url":"http://www.ocregister.com/articles/gun-684698-women-dix.html"},
+          {"id":"9","fscore":"0.47008433333","visibility":true, "url":"http://nypost.com/2015/09/26/cuomo-mourns-carey-gabay-at-funeral-demands-gun-control/"},
+          {"id":"10","fscore":"0.70827955333","visibility":true, "url":"http://www.thedailybeast.com/cheats/2015/09/26/cuomo-calls-for-gun-control-in-eulogy.html"},
+        ]};
+
+      var iran = {"Inputs":
+        [
+          {"id":"1","fscore":"0.60534040371","visibility":true, "url":"http://www.timesofisrael.com/rouhani-meets-with-american-ceos-seeks-iran-investment/"},
+          {"id":"2","fscore":"0.55334596707","visibility":true, "url":"http://www.desertsun.com/story/opinion/contributors/2015/09/26/valley-voice-senator-stone-iran-deal/72829704/"},
+          {"id":"3","fscore":"0.6032170328","visibility":true, "url":"http://www.inklingsnews.com/c/2015/09/26/the-iranian-nuclear-deal-is-a-recipe-for-disaster/"},
+          {"id":"4","fscore":"0.43144953583","visibility":true, "url":"http://www.israelnationalnews.com/News/News.aspx/201098"},
+          {"id":"5","fscore":"0.21325255","visibility":true, "url":"http://www.telesurtv.net/english/news/Irans-Rouhani-Says-Normal-Ties-With-US-Long-Way-Off-20150926-0002.html"},
+          {"id":"6","fscore":"0.57374760315","visibility":true, "url":"http://www.eurasiareview.com/26092015-where-does-oman-and-irans-pipeline-leave-saudi-arabia-analysis/"},
+          {"id":"7","fscore":"0.57374760315","visibility":true, "url":"http://www.kcci.com/politics/john-kerry-meets-with-irans-foreign-minister/35503212"},
+          {"id":"8","fscore":"0.58048895947","visibility":true, "url":"http://uk.reuters.com/article/2015/09/26/uk-un-assembly-iran-haj-idUKKCN0RQ0IV20150926"},
+          {"id":"9","fscore":"-1","visibility":true, "url":"http://www.wsj.com/articles/kerry-discusses-syria-yemen-crises-with-irans-zarif-1443288156"},
+          {"id":"10","fscore":"-1","visibility":true, "url":"http://gulfnews.com/news/mena/syria/obama-administration-wants-to-talk-to-iran-about-syria-1.1590194"},
+        ]};
+
+      var obamacare = {"Inputs":
+        [
+          {"id":"1","fscore":"-1","visibility":true, "url":"http://www.fool.com/investing/general/2015/09/26/why-more-than-two-thirds-of-obamacare-enrollees-op.aspx"},
+          {"id":"2","fscore":"0.59934413125","visibility":true, "url":"http://dailycaller.com/2015/09/25/is-obamacare-officially-a-money-laundering-scheme/"},
+          {"id":"3","fscore":"0.55756989473","visibility":true, "url":"http://news.heartland.org/editorial/2015/09/26/obamacare-waste-continues-pile"},
+          {"id":"4","fscore":"0.49969899113","visibility":true, "url":"http://news.investors.com/politics/092515-772752-why-house-gop-obamacare-lawsuit-is-huge-deal.htm"},
+          {"id":"5","fscore":"0.45761819285","visibility":true, "url":"http://www.cnn.com/2015/09/24/politics/pope-meets-little-sisters-of-the-poor-obamacare/index.html"},
+          {"id":"6","fscore":"-1","visibility":true, "url":"http://townhall.com/columnists/larrykudlow/2015/09/26/the-shutdown-message-n2057184"},
+          {"id":"7","fscore":"0.44063547758","visibility":true, "url":"http://nymag.com/daily/intelligencer/2015/09/obamacare-haters-freaking-out-over-new-report.html"},
+          {"id":"8","fscore":"-1","visibility":true, "url":"http://thehill.com/policy/healthcare/255003-non-profit-obamacare-plan-in-ny-shut-down"},
+          {"id":"9","fscore":"0.3945609","visibility":true, "url":"http://www.inquisitr.com/2444417/pope-francis-vs-obamacare-religious-leader-supports-lawsuit-during-unscheduled-visit-to-convent/"},
+          {"id":"10","fscore":"0.39489064722","visibility":true, "url":"http://www.peoplespunditdaily.com/policy/2015/09/25/obamacare-is-still-a-disaster/"},
+        ]};
+
+      var tax = {"Inputs":
+        [
+          {"id":"1","fscore":"0.47279974294","visibility":true, "url":"http://www.chicagobusiness.com/article/20150921/BLOGS02/150929994/progressive-caucus-pushes-new-property-tax-relief-plan-as-cps-tax-hike-begins-to-move"},
+          {"id":"2","fscore":"0.47657541","visibility":true, "url":"http://chicago.suntimes.com/chicago-politics/7/71/977415/progressive-caucus-outlines-property-tax-rebate-plan"},
+          {"id":"3","fscore":"0.57007525733","visibility":true, "url":"http://www.commdiginews.com/politics-2/hillarys-progressive-tax-plans-paid-for-by-the-middle-class-48773/"},
+          {"id":"4","fscore":"0.57007525733","visibility":true, "url":"http://blogs.wsj.com/economics/2015/09/24/the-wealthiest-households-claim-90-of-tax-credits-for-buying-electric-cars/"},
+          {"id":"5","fscore":"0.54695247171","visibility":true, "url":"http://www.financialbuzz.com/hawaii-languishes-at-bottom-of-us-tax-system-335157"},
+          {"id":"6","fscore":"-1","visibility":true, "url":"http://www.wsj.com/articles/tax-evasions-bite-from-the-ancient-world-to-modern-days-1443028212"},
+          {"id":"7","fscore":"0.38497591807","visibility":true, "url":"http://www.vox.com/2015/9/16/9342703/ben-carson-donald-trump-debate"},
+          {"id":"8","fscore":"0.42452675833","visibility":true, "url":"http://www.nystateofpolitics.com/2015/09/wfps-lipton-dont-lash-tax-cut-to-minimum-wage/"},
+          {"id":"9","fscore":"0.49072530175","visibility":true, "url":"http://www.baconsrebellion.com/2015/09/is-virginias-tax-code-really-the-35th-most-unfair.html"},
+          {"id":"10","fscore":"0.48775885","visibility":true, "url":"http://www.oregonlive.com/mapes/index.ssf/2015/09/oregons_tax_system_among_faire.html"},
+        ]};
+
+      function getUserInput() {
+        for (var i = 0; i < gayrights.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < guncontrol.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < iran.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < obamacare.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+        for (var i = 0; i < tax.Inputs; i++) {
+          input.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+        }
+
+        var input = document.getElementById("userInput").value;
+        console.log("userInput = " + input);
+        return input;
+      }
+
+      var input = getUserInput();
+
+    </script>
+
     <div class="tfclear"></div>
-    </div>
 
+    <!-- HTML for slider -->
+    <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
+    <br>
+    <button class="button" onclick="myFunction()">Submit</button>
 
-  <div class="wrapper">
-          <!-- The range input is hidden and updated on each rotation of the knob -->
-          <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
+    <!-- gets slider value and compares -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myRange").value;
+        console.log("The slide has a value of " + x);
+        return x;
+      }
 
-          <br>
-          <button class="button" onclick="myFunction()">Submit</button>
-          <!-- <input type="submit" value="Submit" class="button" onclick="myFunction()"> -->
+      var sliderVal = myFunction();
 
-          <script>
-            function myFunction() {
-              var x = document.getElementById("myRange").value;
-              console.log(x);
-            }
-          </script>
+      var currentTopic = null;
+      if (input == "gay rights") {
+        currentTopic = gayrights;
+      } else if (input == "gun control") {
+        currentTopic = guncontrol;
+      } else if (input == "iran") {
+        currentTopic = iran;
+      } else if (input == "obamacare") {
+        currentTopic = obamacare;
+      } else if (input == "tax") {
+        currentTopic = tax;
+      }
+
+      if (currentTopic != null) {
+        for (var i = 0; i < currentTopic.Inputs; i++) {
+          if (sliderVal != currentTopic.Inputs[i].fscore) {
+            currentTopic.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
+        }
+      }
+
+    </script>
   </div>
 
+<!-- The tiles -->
+  <div class="tile" id="1">
+    <div class ="content" display="hidden" >
+      <p><a href="http://www.google.com/">Google</a></p>
+    </div>
+  </div>
 
+  <div class=tile id="2">
+    <div class = content>
+        <p><a href="http://www.yahoo.com/">Yahoo</a></p>
 
-      <div class="tile" id="1">
-        <div class ="content" display="hidden" >
-          <p><a href="http://www.google.com/">Google</a></p>
-        </div>
+    </div>
+  </div>
+
+  <div class=tile id="3">
+    <div class = content>
+      <p><a href="http://www.wsj.com/">Wall Street Journal</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="4">
+    <div class = content>
+      <p><a href="http://www.cnn.com/">CNN</a></p>
       </div>
+  </div>
 
-      <div class=tile id="2">
-        <div class = content>
-            <p><a href="http://www.yahoo.com/">Yahoo</a></p>
+  <div class=tile id="5">
+    <div class = content>
+        <p><a href="http://www.nytimes.com/">The New York Times</a></p>
+    </div>
+  </div>
 
-        </div>
-      </div>
+  <div class=tile id="6">
+    <div class = content>
+        <p><a href="http://www.foxnews.com/">Fox News</a></p>
+    </div>
+  </div>
 
-      <div class=tile id="3">
-        <div class = content>
-          <p><a href="http://www.wsj.com/">Wall Street Journal</a></p>
-        </div>
-      </div>
+  <div class=tile id="7">
+    <div class = content>
+      <p><a href="http://www.bbc.com/">BBC</a></p>
+    </div>
+  </div>
 
-      <div class=tile id="4">
-        <div class = content>
-          <p><a href="http://www.cnn.com/">CNN</a></p>
-          </div>
-      </div>
+  <div class=tile id="8">
+    <div class = content>
+      <p><a href="http://www.msnbc.com/">MSNBC</a></p>
+    </div>
+  </div>
 
-      <div class=tile id="5">
-        <div class = content>
-            <p><a href="http://www.nytimes.com/">The New York Times</a></p>
-        </div>
-      </div>
+  <div class=tile id="9">
+    <div class = content>
+      <p><a href="http://www.theatlantic.com/">The Atlantic</a></p>
+    </div>
+  </div>
 
-      <div class=tile id="6">
-        <div class = content>
-            <p><a href="http://www.foxnews.com/">Fox News</a></p>
-        </div>
-      </div>
-
-      <div class=tile id="7">
-        <div class = content>
-          <p><a href="http://www.bbc.com/">BBC</a></p>
-        </div>
-      </div>
-
-      <div class=tile id="8">
-        <div class = content>
-          <p><a href="http://www.msnbc.com/">MSNBC</a></p>
-        </div>
-      </div>
-
-      <div class=tile id="9">
-        <div class = content>
-          <p><a href="http://www.theatlantic.com/">The Atlantic</a></p>
-        </div>
-      </div>
-
-      <div class=tile id="10">
-        <div class = content>
-          <p><a href="http://www.washingtonpost.com/">Washington Post</a></p>
-        </div>
-      </div>
+  <div class=tile id="10">
+    <div class = content>
+      <p><a href="http://www.washingtonpost.com/">Washington Post</a></p>
+    </div>
+  </div>
 
     </body>
 </html>

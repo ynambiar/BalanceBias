@@ -1,14 +1,14 @@
 {"Inputs":
 [
-    {"id":"1","fscore":"-1","visibility":true, "url":"http://www.timesofisrael.com/rouhani-meets-with-american-ceos-seeks-iran-investment/"},
-    {"id":"2","fscore":"-1","visibility":true, "url":"http://www.desertsun.com/story/opinion/contributors/2015/09/26/valley-voice-senator-stone-iran-deal/72829704/"},
-    {"id":"3","fscore":"-1","visibility":true, "url":"http://www.inklingsnews.com/c/2015/09/26/the-iranian-nuclear-deal-is-a-recipe-for-disaster/"},
-    {"id":"4","fscore":"-1","visibility":true, "url":"http://www.israelnationalnews.com/News/News.aspx/201098"},
-    {"id":"5","fscore":"-1","visibility":true, "url":"http://www.telesurtv.net/english/news/Irans-Rouhani-Says-Normal-Ties-With-US-Long-Way-Off-20150926-0002.html"},
-    {"id":"6","fscore":"-1","visibility":true, "url":"http://www.eurasiareview.com/26092015-where-does-oman-and-irans-pipeline-leave-saudi-arabia-analysis/"},
-    {"id":"7","fscore":"-1","visibility":true, "url":"http://www.kcci.com/politics/john-kerry-meets-with-irans-foreign-minister/35503212"},
-    {"id":"8","fscore":"-1","visibility":true, "url":"http://uk.reuters.com/article/2015/09/26/uk-un-assembly-iran-haj-idUKKCN0RQ0IV20150926"},
-    {"id":"9","fscore":"-1","visibility":true, "url":"http://www.wsj.com/articles/kerry-discusses-syria-yemen-crises-with-irans-zarif-1443288156"},
-    {"id":"10","fscore":"-1","visibility":true, "url":"http://gulfnews.com/news/mena/syria/obama-administration-wants-to-talk-to-iran-about-syria-1.1590194"},
+    {"id":"1","fscore":"0.60534040371","visibility":"visible", "url":"http://www.timesofisrael.com/rouhani-meets-with-american-ceos-seeks-iran-investment/"},
+    {"id":"2","fscore":"0.55334596707","visibility":"visible", "url":"http://www.desertsun.com/story/opinion/contributors/2015/09/26/valley-voice-senator-stone-iran-deal/72829704/"},
+    {"id":"3","fscore":"0.6032170328","visibility":"visible", "url":"http://www.inklingsnews.com/c/2015/09/26/the-iranian-nuclear-deal-is-a-recipe-for-disaster/"},
+    {"id":"4","fscore":"0.43144953583","visibility":"visible", "url":"http://www.israelnationalnews.com/News/News.aspx/201098"},
+    {"id":"5","fscore":"0.21325255","visibility":"visible", "url":"http://www.telesurtv.net/english/news/Irans-Rouhani-Says-Normal-Ties-With-US-Long-Way-Off-20150926-0002.html"},
+    {"id":"6","fscore":"0.57374760315","visibility":"visible", "url":"http://www.eurasiareview.com/26092015-where-does-oman-and-irans-pipeline-leave-saudi-arabia-analysis/"},
+    {"id":"7","fscore":"0.57374760315","visibility":"visible", "url":"http://www.kcci.com/politics/john-kerry-meets-with-irans-foreign-minister/35503212"},
+    {"id":"8","fscore":"0.58048895947","visibility":"visible", "url":"http://uk.reuters.com/article/2015/09/26/uk-un-assembly-iran-haj-idUKKCN0RQ0IV20150926"},
+    {"id":"9","fscore":"-1","visibility":"visible", "url":"http://www.wsj.com/articles/kerry-discusses-syria-yemen-crises-with-irans-zarif-1443288156"},
+    {"id":"10","fscore":"-1","visibility":"visible", "url":"http://gulfnews.com/news/mena/syria/obama-administration-wants-to-talk-to-iran-about-syria-1.1590194"},
 
 ]}

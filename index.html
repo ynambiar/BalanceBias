@@ -246,36 +246,50 @@
 
         //based on user input set topic, reset visibilities
         if (getUserInput() === "gay rights") {
-        for (var i = 0; i < gayrights.Inputs; i++) {
-          if (sliderVal != gayrights.Inputs[i].fscore) {
-            gayrights.Inputs[i].visibility = "hidden";
-            document.getElementById(i).styles.visibility="hidden";
+          for (var i = 0; i < gayrights.Inputs.length; i++) {
+            if (sliderVal != gayrights.Inputs[i].fscore) {
+              gayrights.Inputs[i].visibility = "hidden";
+              document.getElementById(i).styles.visibility="hidden";
+            }
           }
-          currentTopic = gayrights;
-        }
+        `currentTopic = gayrights;
 
-        } else if (getUserInput() == "gun control") {
-          if (sliderVal != guncontrol.Inputs[i].fscore) {
-            guncontrol.Inputs[i].visibility = "hidden";
-            document.getElementById(i).styles.visibility="hidden";
+
+        } else if (getUserInput() === "gun control") {
+          for (var i = 0; i < guncontrol.Inputs.length; i++) {
+            if (sliderVal != guncontrol.Inputs[i].fscore) {
+              guncontrol.Inputs[i].visibility = "hidden";
+              document.getElementById(i).styles.visibility="hidden";
+            }
           }
           currentTopic = guncontrol;
-        } else if (getUserInput() == "iran") {
-          if (sliderVal != iran.Inputs[i].fscore) {
-            iran.Inputs[i].visibility = "hidden";
-            document.getElementById(i).styles.visibility="hidden";
+
+
+        } else if (getUserInput() === "iran") {
+          for (var i = 0; i < iran.Inputs.length; i++) {
+            if (sliderVal != iran.Inputs[i].fscore) {
+              iran.Inputs[i].visibility = "hidden";
+              document.getElementById(i).styles.visibility="hidden";
+            }
           }
           currentTopic = iran;
-        } else if (getUserInput() == "obamacare") {
-          if (sliderVal != obamacare.Inputs[i].fscore) {
-            obamacare.Inputs[i].visibility = "hidden";
-            document.getElementById(i).styles.visibility="hidden";
+
+
+        } else if (getUserInput() === "obamacare") {
+          for (var i = 0; i < obamacare.Inputs.length; i++) {
+            if (sliderVal != obamacare.Inputs[i].fscore) {
+              obamacare.Inputs[i].visibility = "hidden";
+              document.getElementById(i).styles.visibility="hidden";
+            }
           }
           currentTopic = obamacare;
-        } else if (getUserInput() == "tax") {
-          if (sliderVal != tax.Inputs[i].fscore) {
-            tax.Inputs[i].visibility = "hidden";
-            document.getElementById(i).styles.visibility="hidden";
+
+        } else if (getUserInput() === "tax") {
+          for (var i = 0; i < tax.Inputs.length; i++) {
+            if (sliderVal != tax.Inputs[i].fscore) {
+              tax.Inputs[i].visibility = "hidden";
+              document.getElementById(i).styles.visibility="hidden";
+            }
           }
           currentTopic = tax;
         }

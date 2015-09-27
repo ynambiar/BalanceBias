@@ -26,13 +26,95 @@
       <input type="submit" value="Search Bing" class="button">
     </form>
  -->
-    <form id="form" onsubmit="return false;">
+    <!-- <form id="form" onsubmit="return false;">
       <input type="text" id="userInput" />
       <input type="submit" onclick="getUserInput()" />
-    </form>
+    </form> -->
+
+
+
+      <input type="text" id="userInput" />
+      <button class="button" onclick="setTopic()">Button Search</button>
+
+
+
+    <div class="tfclear"></div>
+
+      <!-- HTML for slider -->
+      <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
+      <br>
+      <button class="button" onclick="myFunction()">Submit</button>
 
     <!-- saves user input -->
-    <script>
+
+  </div>
+
+<!-- The tiles -->
+  <div class="tile" id="1">
+    <div class =content >
+      <script>
+      // console.log(currentTopic[1].url)
+      // <p><a href="google.com">Google</a></p>
+      </script>
+    </div>
+  </div>
+
+  <div class=tile id="2">
+    <div class = content>
+        <p><a href="http://www.yahoo.com/">Yahoo</a></p>
+
+    </div>
+  </div>
+
+  <div class=tile id="3">
+    <div class = content>
+      <p><a href="http://www.wsj.com/">Wall Street Journal</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="4">
+    <div class = content>
+      <p><a href="http://www.cnn.com/">CNN</a></p>
+      </div>
+  </div>
+
+  <div class=tile id="5">
+    <div class = content>
+        <p><a href="http://www.nytimes.com/">The New York Times</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="6">
+    <div class = content>
+        <p><a href="http://www.foxnews.com/">Fox News</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="7">
+    <div class = content>
+      <p><a href="http://www.bbc.com/">BBC</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="8">
+    <div class = content>
+      <p><a href="http://www.msnbc.com/">MSNBC</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="9">
+    <div class = content>
+      <p><a href="http://www.theatlantic.com/">The Atlantic</a></p>
+    </div>
+  </div>
+
+  <div class=tile id="10">
+    <div class = content>
+      <p><a href="http://www.washingtonpost.com/">Washington Post</a></p>
+    </div>
+  </div>
+
+  <script>
       var gayrights = {"Inputs":
         [
           {"id":"1","fscore":"0.6039353329347825","visibility":true, "url":"http://www.heraldsun.com/news/n-c-pride-annual-lgbt-festival-draws-thousands-to-durham/article_440994f6-649a-11e5-8958-fb7d25205116.html"},
@@ -104,45 +186,13 @@
         ]};
 
       function getUserInput() {
-        for (var i = 0; i < gayrights.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-        for (var i = 0; i < guncontrol.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-        for (var i = 0; i < iran.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-        for (var i = 0; i < obamacare.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-        for (var i = 0; i < tax.Inputs; i++) {
-          input.Inputs[i].visibility = "visible";
-          document.getElementById(i).styles.visibility = "visible";
-        }
-
-        var input = document.getElementById("userInput").value;
-        console.log("userInput = " + input);
-        return input;
+        // var input = document.getElementById("userInput").value;
+        console.log(document.getElementById("userInput").value);
+        return document.getElementById("userInput").value;;
       }
 
-      var input = getUserInput();
-
-    </script>
-
-    <div class="tfclear"></div>
-
-    <!-- HTML for slider -->
-    <input type="range" id="myRange" min="0" max="1" value=".5" align="middle" step="0.001" width="250"/>
-    <br>
-    <button class="button" onclick="myFunction()">Submit</button>
-
     <!-- gets slider value and compares -->
-    <script>
+
       function myFunction() {
         var x = document.getElementById("myRange").value;
         console.log("The slide has a value of " + x);
@@ -150,93 +200,85 @@
       }
 
       var sliderVal = myFunction();
-
       var currentTopic = null;
-      if (input == "gay rights") {
-        currentTopic = gayrights;
-      } else if (input == "gun control") {
-        currentTopic = guncontrol;
-      } else if (input == "iran") {
-        currentTopic = iran;
-      } else if (input == "obamacare") {
-        currentTopic = obamacare;
-      } else if (input == "tax") {
-        currentTopic = tax;
-      }
 
-      if (currentTopic != null) {
-        for (var i = 0; i < currentTopic.Inputs; i++) {
-          if (sliderVal != currentTopic.Inputs[i].fscore) {
-            currentTopic.Inputs[i].visibility = "hidden";
+      function setTopic() {
+        console.log("setTopic() is called");
+        console.log("gayRights.Inputs = " + gayrights.Inputs);
+        // reset all articles to visible
+        for (var i = 0; i < gayrights.Inputs.length; i++) {
+          console.log("url = " + gayrights.Inputs[i].url);
+          gayrights.Inputs[i].visibility = "visible";
+          // document.getElementById(i).styles.visibility = "visible";
+          // document.getElementById(gayrights.Inputs[i].id).html(gayrights.Inputs[i].url);
+          console.log(gayrights.Inputs[i].title);
+          document.getElementById(gayrights.Inputs[i].id).innerHTML = "hi";
+        }
+        for (var i = 0; i < guncontrol.Inputs.length; i++) {
+          guncontrol.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+          document.getElementById(guncontrol.Inputs[i].id).html(guncontrol.Inputs[i].url);
+          document.getElementById(guncontrol.Inputs[i].id).innerHTML(guncontrol.Inputs[i].title);
+        }
+        for (var i = 0; i < iran.Inputs.length; i++) {
+          iran.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+          document.getElementById(iran.Inputs[i].id).html(iran.Inputs[i].url);
+          document.getElementById(iran.Inputs[i].id).innerHTML(iran.Inputs[i].title);
+        }
+        for (var i = 0; i < obamacare.Inputs.length; i++) {
+          obamacare.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+          document.getElementById(obamacare.Inputs[i].id).html(obamacare.Inputs[i].url);
+          document.getElementById(obamacare.Inputs[i].id).innerHTML(obamacare.Inputs[i].title);
+        }
+        for (var i = 0; i < tax.Inputs.length; i++) {
+          tax.Inputs[i].visibility = "visible";
+          document.getElementById(i).styles.visibility = "visible";
+          document.getElementById(tax.Inputs[i].id).html(tax.Inputs[i].url);
+          document.getElementById(tax.Inputs[i].id).innerHTML(tax.Inputs[i].title);
+        }
+
+        //based on user input set topic, reset visibilities
+        if (getUserInput() === "gay rights") {
+        for (var i = 0; i < gayrights.Inputs; i++) {
+          if (sliderVal != gayrights.Inputs[i].fscore) {
+            gayrights.Inputs[i].visibility = "hidden";
             document.getElementById(i).styles.visibility="hidden";
           }
+          currentTopic = gayrights;
         }
+
+        } else if (getUserInput() == "gun control") {
+          if (sliderVal != guncontrol.Inputs[i].fscore) {
+            guncontrol.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
+          currentTopic = guncontrol;
+        } else if (getUserInput() == "iran") {
+          if (sliderVal != iran.Inputs[i].fscore) {
+            iran.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
+          currentTopic = iran;
+        } else if (getUserInput() == "obamacare") {
+          if (sliderVal != obamacare.Inputs[i].fscore) {
+            obamacare.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
+          currentTopic = obamacare;
+        } else if (getUserInput() == "tax") {
+          if (sliderVal != tax.Inputs[i].fscore) {
+            tax.Inputs[i].visibility = "hidden";
+            document.getElementById(i).styles.visibility="hidden";
+          }
+          currentTopic = tax;
+        }
+        return currentTopic;
       }
 
-    </script>
-  </div>
 
-<!-- The tiles -->
-  <div class="tile" id="1">
-    <div class ="content" display="hidden" >
-      <p><a href="http://www.google.com/">Google</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="2">
-    <div class = content>
-        <p><a href="http://www.yahoo.com/">Yahoo</a></p>
-
-    </div>
-  </div>
-
-  <div class=tile id="3">
-    <div class = content>
-      <p><a href="http://www.wsj.com/">Wall Street Journal</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="4">
-    <div class = content>
-      <p><a href="http://www.cnn.com/">CNN</a></p>
-      </div>
-  </div>
-
-  <div class=tile id="5">
-    <div class = content>
-        <p><a href="http://www.nytimes.com/">The New York Times</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="6">
-    <div class = content>
-        <p><a href="http://www.foxnews.com/">Fox News</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="7">
-    <div class = content>
-      <p><a href="http://www.bbc.com/">BBC</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="8">
-    <div class = content>
-      <p><a href="http://www.msnbc.com/">MSNBC</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="9">
-    <div class = content>
-      <p><a href="http://www.theatlantic.com/">The Atlantic</a></p>
-    </div>
-  </div>
-
-  <div class=tile id="10">
-    <div class = content>
-      <p><a href="http://www.washingtonpost.com/">Washington Post</a></p>
-    </div>
-  </div>
+</script>
 
     </body>
 </html>

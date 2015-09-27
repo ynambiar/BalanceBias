@@ -10,7 +10,7 @@ a:hover{text-decoration:none; color:#978e86;}
 ul li { list-style:none; outline:none;}
 img { border:none; }
 img { border:none;}
-h1{font-family: 'Georgia', sans-serif; font-size:50px; color:white; font-weight:lighter; text-align: center; padding-bottom:15px;padding-top:25px; vertical-align: middle;}
+h1{font-family: 'Georgia', sans-serif; font-size:50px; color:white; font-weight:lighter; text-align: center; padding-bottom:0px;padding-top:0px; vertical-align: middle;}
 h2{font-family: 'Georgia', sans-serif; font-size:22px; color:white; font-weight:lighter;font-style: oblique; text-align: center; padding-bottom:25px;padding-top:5px vertical-align: middle;}
 /*-------------------------------------------------
 CSS TWEAKS

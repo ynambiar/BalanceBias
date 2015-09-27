@@ -1,14 +1,14 @@
 {"Inputs":
 [
-    {"id":"1","fscore":"-1","visibility":true, "url":"http://www.heraldsun.com/news/n-c-pride-annual-lgbt-festival-draws-thousands-to-durham/article_440994f6-649a-11e5-8958-fb7d25205116.html"},
-    {"id":"2","fscore":"-1","visibility":true, "url":"http://www.usatoday.com/story/news/nation-now/2015/09/14/florida-marriage-licenses-gender-neutral/72264194/"},
-    {"id":"3","fscore":"-1","visibility":true, "url":"http://www.bupipedream.com/opinion/57958/dont-forget-the-queer-in-lgbtq/"},
-    {"id":"4","fscore":"-1","visibility":true, "url":"http://www.wtxl.com/news/marriage-ruling-spurs-change-in-car-boat-title-paperwork/article_542b4f02-6236-11e5-9d55-3fed35f5710b.html"},
-    {"id":"5","fscore":"-1","visibility":true, "url":"http://www.times-herald.com/Local/20150924FrontSameSexMarriage12inches"},
-    {"id":"6","fscore":"-1","visibility":true, "url":"http://www.thedailybeast.com/cheats/2015/09/18/cruz-dad-backs-kim-davis.html"},
-    {"id":"7","fscore":"-1","visibility":true, "url":"http://www.allmediany.com/news/55394-the-fight-for-same-sex-marriage-in-australia-isn039t-over"},
-    {"id":"8","fscore":"-1","visibility":true, "url":"http://www.wtsp.com/story/news/local/florida/2015/09/14/fl-marriage-licenses--now--gender-neutral/72249450/"},
-    {"id":"9","fscore":"-1","visibility":true, "url":"http://www.cleveland.com/opinion/index.ssf/2015/09/gay_marriage_plaintiff_lawyers.html"},
-    {"id":"10","fscore":"-1","visibility":true, "url":"http://www.keloland.com/newsdetail.cfm/south-dakota-to-pay-242k-in-gay-marriage-fees/?id=185436"},
+    {"id":"1","fscore":"-1","visibility":"visible", "url":"http://www.heraldsun.com/news/n-c-pride-annual-lgbt-festival-draws-thousands-to-durham/article_440994f6-649a-11e5-8958-fb7d25205116.html","title":"N.C. PRIDE: Annual LGBT festival draws thousands to Durham","news_source":"The Herald Sun"},
+    {"id":"2","fscore":"-1","visibility":"visible", "url":"http://www.usatoday.com/story/news/nation-now/2015/09/14/florida-marriage-licenses-gender-neutral/72264194/","title":"Fla. marriage licenses become gender-neutral","news_source":"USA Today"},
+    {"id":"3","fscore":"-1","visibility":"visible", "url":"http://www.bupipedream.com/opinion/57958/dont-forget-the-queer-in-lgbtq/","title":"Don’t forget the queer in LGBTQ","news_source":"Pipe Dream"},
+    {"id":"4","fscore":"-1","visibility":"visible", "url":"http://www.wtxl.com/news/marriage-ruling-spurs-change-in-car-boat-title-paperwork/article_542b4f02-6236-11e5-9d55-3fed35f5710b.html","title":"Marriage Ruling Spurs Change in Car, Boat Title Paperwork","news_source":"WTXL tv"},
+    {"id":"5","fscore":"-1","visibility":"visible", "url":"http://www.times-herald.com/Local/20150924FrontSameSexMarriage12inches","title":"Same Sex Marriage Ruling Compliance Help Offered","news_source":"Times-Herald"},
+    {"id":"6","fscore":"-1","visibility":"visible", "url":"http://www.thedailybeast.com/cheats/2015/09/18/cruz-dad-backs-kim-davis.html","title":"Cruz’s Dad: Gay Marriage From ‘Devil’","news_source":"The Daily Beast"},
+    {"id":"7","fscore":"-1","visibility":"visible", "url":"http://www.allmediany.com/news/55394-the-fight-for-same-sex-marriage-in-australia-isn039t-over","title":"The Fight For Same-Sex Marriage In Australia Isn't Over","news_source":"Allmediany"},
+    {"id":"8","fscore":"-1","visibility":"visible", "url":"http://www.wtsp.com/story/news/local/florida/2015/09/14/fl-marriage-licenses--now--gender-neutral/72249450/","title":"FL marriage licenses will now be gender-neutral","news_source":"WTSP Tampa Bay"},
+    {"id":"9","fscore":"-1","visibility":"visible", "url":"http://www.cleveland.com/opinion/index.ssf/2015/09/gay_marriage_plaintiff_lawyers.html","title":"Gay marriage plaintiff lawyers should be paid - but not enriched: editorial","news_source":"Cleveland News"},
+    {"id":"10","fscore":"-1","visibility":"visible", "url":"http://www.keloland.com/newsdetail.cfm/south-dakota-to-pay-242k-in-gay-marriage-fees/?id=185436","title":"South Dakota To Pay $242K In Gay Marriage Fees","news_source":"Keloland Television"},
 
 ]}

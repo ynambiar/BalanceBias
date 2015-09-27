@@ -1,11 +1,13 @@
-<!-- this program extracts the score for id
-# averages id -->
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            var sentimentJSON = {
+<body>
+
+
+<h1>This article's sentiment value = </h1>
+<p id="demo"></p>
+
+<script>
+var sentimentJSON = {
                                    "odata.metadata": "https://api.datamarket.azure.com/data.ashx/amla/text-analytics/v1/$metadata#Microsoft.Azure.MachineLearning.TextAnalytics.FrontEndService.Models.SentimentBatchResult",
                                     "SentimentBatch": [
                                         {
@@ -528,29 +530,22 @@
                                     "Errors": []
                                     }
 
-            function getAverage(x) {
+function getAverage(x) {
+    var count = 0;
+    var sum = 0;
+    batch = x.SentimentBatch;
+    for (i = 0; i < batch.length; i++) {
+        console.log(batch[i]);
+        count += batch[i].Score;
+        sum++;
+    }
+    var average = count/sum;
+    return average;
+}
 
-                var count = 0;
-                var sum = 0;
-                batch = x.SentimentBatch;
-                for (i = 0; i < batch.length; i++) {
-                    console.log(batch[i]);
-                    count += batch[i].Score;
-                    sum++;
-                }
-                var average = count/sum;
-                console.log(average)
-                return average;
-            }
+document.getElementById("demo").innerHTML = getAverage(sentimentJSON);
 
-            console.log(sentimentJSON);
-            getAverage(sentimentJSON);
-        </script>
-    </head>
+</script>
 
-    <body>
-        <h1>WOO PARTY</h1>
-        <p id="demo">A Paragraph. and the average is = </p>
-        <button type="button" onclick="myFunction()">Try it</button>
-    </body>
+</body>
 </html>
